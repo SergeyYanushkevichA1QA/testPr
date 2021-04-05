@@ -20,7 +20,6 @@ public class MainScreen extends Screen {
 
     private final ILabel titleOnPage = getElementFactory().getLabel(By.id("com.todaytix.TodayTix:id/title"), "Title");
     private final IButton nextButton = getElementFactory().getButton(By.id("com.todaytix.TodayTix:id/next_button"), "Next Button");
-    private final ILabel pageIndicator = getElementFactory().getLabel(By.id("com.todaytix.TodayTix:id/pager_indicator"), "Page indicator");
     private final IButton selectButton = getElementFactory().getButton(By.id("com.todaytix.TodayTix:id/secondary_button"), "Select Manually button");
 
 
@@ -36,16 +35,6 @@ public class MainScreen extends Screen {
         selectButton.click();
     }
 
-/*
-    public boolean isOnPage(int number) {
-        boolean flag = false;
-        System.out.println(pageIndicator.getAttribute("index"));
-        if(pageIndicator.getAttribute("index").equals(Integer.toString(number))) {
-            flag = true;
-        }
-        return flag;
-    }
-*/
 
 
 
